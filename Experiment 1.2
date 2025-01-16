@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class ArithmeticOperations {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the first number: ");
+        String num1 = sc.nextLine();
+
+        System.out.print("Enter the second number: ");
+        String num2 = sc.nextLine();
+
+        Double number1 = Double.valueOf(num1);
+        Double number2 = Double.valueOf(num2);
+
+        System.out.println("Addition: " + (number1 + number2));
+        System.out.println("Subtraction: " + (number1 - number2));
+        System.out.println("Multiplication: " + (number1 * number2));
+        if (number2 != 0) {
+            System.out.println("Division: " + (number1 / number2));
+        } else {
+            System.out.println("Division: Undefined (cannot divide by zero)");
+        }
+    }
+}
